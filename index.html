@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <title>Portfolio Site</title>
+    
+</head>
+<body>
+
+    <!-- NAVIGATION SECTION -->
+    <nav class="nav">
+        <ul class=nav-list>
+            <li><a class="nav-item" href="#myProjects">Projects</a></li>
+            <li><a class="nav-item" href="#myAbout">About</a></li>
+            <li><a class="nav-item" href="#myContact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <main class="main-section container">
+        <div class="text-wrapper">
+            <h1>Jeff Kimball</h1>
+            <h4>web developer</h4>
+        </div>
+        <div class="image-wrapper">
+            <img src="images/keyboard.jpg" alt="wooden keyboard">
+            <div class="icon-wrapper">
+                <ul class="icon-list">
+                    <li><a href="https://github.com/jeffKimball" target="_blank">
+                        <img class="icon" src="images/github.png" alt="github icon">
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/jeff-kimball/" target="_blank">
+                        <img class="icon" src="images/linked.png" alt="linked in icon">
+                    </a></li>
+                    <li><a href="https://codepen.io/jeff-kimball" target="_blank">
+                        <img class="icon" src="images/codepen.png" alt="code pen icon">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- PROJECT SECTION -->
+    <div class="container project-section">
+        <h1 class="section-title" id="myProjects">Projects</h1>
+        <hr>
+        <div class="project-wrapper">
+            <div class="project-card">
+                <div class="card-icon">
+                    <img class="weather-icon" src="images/weather-icon.png">
+                </div>
+                <div class="card-content">
+                    <h2>Weather App</h2>
+                    <ul>
+                        <li>Fetch API</li>
+                        <li>UI/UX</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>                                                
+                    </ul>
+                    <button><a href="/weatherApp/weather.html" target="_blank">View Project</a></button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="card-icon">
+                    <img class="plane-icon" src="images/plane.png">
+                </div>
+                <div class="card-content">
+                    <h2>Tourism site</h2>
+                    <ul>
+                        <li>Resposive Design</li>
+                        <li>Form Validation</li> 
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>                                                                     
+                    </ul>
+                    <button><a href="/tourismSite/tourism.html" target="_blank">View Project</a></button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="card-icon">
+                    <img class="coffee-icon" src="images/coffee-mug.png">
+                </div>
+                <div class="card-content">
+                    <h2>Starbucks Clone</h2>
+                    <ul>
+                        <li>Resposive Design</li> 
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <button><a href="starbucksClone/clone.html" target="_blank">View Project</a></button>
+                </div>                
+            </div>
+        </div>
+        <div class="bg-banner">
+            <img src="images/wrench-bg.png" alt="">
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="about-section container">
+        <h1 class="section-title" id="myAbout">About</h1>
+        <hr>
+        <section>
+            <div class="section-text">
+                <p>My background is in education; in my last role I worked as an Information and Communication Technology Instructor.  I have a strong foundational knowledge in front-end technologies. My ambition is to become a full-stack developer.                              
+                </p>
+                <aside>                    
+                    <a href="downloads/Kimball_CV.txt" download="Jeff_Kimball_CV">
+                        <i class="fas fa-file-download"></i>
+                        <p>Download CV</p>
+                    </a>
+                </aside>  
+            </div>
+            <img src="images/mouse.png" alt="">
+        </section>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div class="contact-section">
+        <h1 class="section-title" id="myContact">Contact</h1>
+        <hr>
+        <div class="contact-form">
+            <form action="https://formsubmit.co/yourEmailHere@email.com" method="POST" class="form-control">
+                <input type="hidden" name="_subject" value="New email from your website">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" class="form-control-msg" name="message" rows="10"  required></textarea>
+                </div>
+                <button type="submit">Send</button>
+           </form>
+        </div>        
+    </div>
+
+    
+</body>
+</html>
